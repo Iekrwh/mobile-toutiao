@@ -2,7 +2,8 @@ import axios from 'axios'
 import store from '@/store/' // 导入store组件 获取token
 
 const request = axios.create({
-  baseURL: 'http://ttapi.research.itcast.cn/'
+//   baseURL: 'http://ttapi.research.itcast.cn/'
+  baseURL: 'https://toutiao.m.lipengzhou.com/api/'
 })
 
 export default request
