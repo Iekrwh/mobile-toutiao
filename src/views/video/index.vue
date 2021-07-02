@@ -1,14 +1,11 @@
 <template>
-    <div class="app">
-        <router-view/>
-    </div>
+    <div class="video-container"></div>
 </template>
 
 <script>
-// import 'postcss-px-to-viewport'
 
 export default {
-  name: 'App',
+  name: 'VideoIndex',
   components: {},
   data () {
     return {

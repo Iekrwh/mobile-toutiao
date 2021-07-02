@@ -1,14 +1,11 @@
 <template>
-    <div class="app">
-        <router-view/>
-    </div>
+    <div class="qa-container"></div>
 </template>
 
 <script>
-// import 'postcss-px-to-viewport'
 
 export default {
-  name: 'App',
+  name: 'QaIndex',
   components: {},
   data () {
     return {
