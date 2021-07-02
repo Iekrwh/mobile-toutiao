@@ -55,7 +55,7 @@ export default {
     return {
       user: {
         mobile: '13911111111', // 手机号
-        code: '246810  ' // 验证码
+        code: '246810' // 验证码
       },
       rules: {
         mobile: [{ required: true, message: '请填写手机号', trigger: 'onBlur' },
@@ -82,7 +82,7 @@ export default {
         // window.localStorage.setItem('user', JSON.stringify(res.data.data)) // 存储token
 
         this.$store.commit('setUser', data.data) // 将登陆成功的token 存储到vuex容器的store中
-        // this.$router.push('/my')
+        this.$router.push('/my') // 跳转页面
       } catch (err) {
         // console.log('登陆失败', err)
         Toast.fail('登陆失败,手机或者验证码错误')
