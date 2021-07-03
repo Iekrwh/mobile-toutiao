@@ -4,6 +4,7 @@ export const getItem = (key) => {
   try {
     return JSON.parse(data) // 尝试把data转为 JavaScript 对象
   } catch (err) {
+    console.log('异常', data)
     return data
   }
 }
